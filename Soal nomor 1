@@ -1,3 +1,7 @@
+/** Nama : Muhammad Lutvi
+ *  Kelas : TK 1A
+ *  soalnomor1 Dina
+ */
 import java.util.Scanner;
 
 public class TugasNomor1 {
@@ -9,7 +13,7 @@ public class TugasNomor1 {
         
         System.out.print("Masukkan jumlah halaman yang sudah diketik : ");
         int x = input.nextInt();
-        
+       
         // Perhitungan pendapatan
         int uangPasti = x * hargaperhal;
         int sisahalaman = tohal - x;
@@ -20,7 +24,6 @@ public class TugasNomor1 {
         System.out.println("Uang yang sudah diterima: Rp " + uangPasti);
         System.out.println("Halaman yang belum selesai : " + sisahalaman);
         System.out.println("Uang sisa halaman: Rp " + uangbelum);
-        
         
         input.close();
     }
