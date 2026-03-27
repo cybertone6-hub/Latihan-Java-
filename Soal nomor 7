@@ -1,24 +1,32 @@
 /** Nama : Muhammad Lutvi
  *  Kelas : TK 1A
- *  soalnomor6 dies natalis PNP
+ *  soalnomor7 upahlembur
  */
+ 
 import java.util.Scanner;
 
-public class SoalNomor6 {
+public class Soalnomor7 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        System.out.print("Masukkan umur PNP: ");
-        int umur = input.nextInt();
+        System.out.print("Masukkan jam lembur: ");
+        int jam = input.nextInt();
         
-        // Cek  kelipatan 10 (Dekade)
-        if (umur % 10 == 0) {
-            int dekade = umur / 10;
-            System.out.println("Dekade PNP Ke = " + dekade);
-        } else {
-            // Jika bukan kelipatan 10 maka (Dies Natalis)
-            System.out.println("Dies Natalis PNP Ke = " + umur);
+        // Batas maksimal 50 jam
+        if (jam > 50) {
+            jam = 50;
         }
+        
+        int jumlahUpah;
+        
+        // kali upah
+        if (jam <= 20) {
+            jumlahUpah = jam * 2000;
+        } else {
+            jumlahUpah = jam * 3000;
+        }
+        
+        System.out.println("Total Upah Lembur: Rp " + jumlahUpah);
         
         input.close();
     }
